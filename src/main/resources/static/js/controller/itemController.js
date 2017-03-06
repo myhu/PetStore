@@ -22,7 +22,9 @@ storeModule.controller('itemCtrlWithResource', ['$scope', '$window', 'itemServic
     $scope.submit = function()
     {
         var item = {
-            'name': $scope.name
+            'name'      : $scope.name,
+            'category'  : $scope.category,
+            'uri'       : $scope.uri
         };
         var service = new itemServiceWithResource(item);
         service.$save(function(response){

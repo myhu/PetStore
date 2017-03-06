@@ -28,7 +28,8 @@ public class initApplication {
 	private Pet createPet() {
 		Pet pet = new Pet();
 		pet.setName("myhu");
-
+		pet.setCategory("small");
+		pet.setUri("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLS-WZEbGr1nPAs2aAhBDvMqIPKCvKlP2AvmVPVgD5r0IkzLxf");
 		return pet;
 	}
 

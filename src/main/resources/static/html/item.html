@@ -22,8 +22,11 @@
                         <div class="form-group">
                             <label class="control-label col-lg-1" for="category">Category:</label>
                             <div class="col-lg-12">
-                            <input type="text" id="category" class="form-control"
-                                   ng-model="category" placeholder="Enter a category">
+                                <select id="category" class="form-control" ng-model="category">
+                                    <option value="small">small</option>
+                                    <option value="not_too_small">not too small</option>
+                                    <option value="big">big</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
@@ -65,7 +68,7 @@
                     <td>{{item.id}}</td>
                     <td><img ng-src="{{item.uri}}"  class="img-responsive"></td>
                     <td>{{item.name}}</td>
-                    <td>{{item.category.name}}</td>
+                    <td>{{item.category}}</td>
                     <td>
                         <a href="" ng-click="deleteItem(item.id)" class="btn btn-xs btn-default" title="delete"><span class="glyphicon glyphicon-trash"></span></a>
                         <!--<button class="btn btn-danger" ng-click="deleteItem(item.id)" >Remove</button>-->
