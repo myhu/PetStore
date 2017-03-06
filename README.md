@@ -3,4 +3,4 @@
 missing:
 - unit test (javascript and Java, as well)
 - file upload
-- simpel websecurity ( authentication and authorizations )
+- simple websecurity with login page and login header( authentication and authorizations )
