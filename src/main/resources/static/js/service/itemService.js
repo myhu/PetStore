@@ -43,6 +43,15 @@ storeModule.factory('itemServiceWithResource', ['$resource', function($resource)
 }])
 
 
+
+storeModule.factory('loginService', ['$resource', function($resource) {
+    return $resource("/login", {
+        update: {
+            method: 'PUT'
+        }
+    });
+}])
+
 storeModule.factory('AuthInterceptor', [function() {
     return {
     // Send the Authorization header with each request

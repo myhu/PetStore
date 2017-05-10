@@ -17,6 +17,7 @@ public class initApplication {
 	@Autowired
 	PetRepository petRepository;
 
+
 	@Bean
 	public String initTemplate()
 	{
